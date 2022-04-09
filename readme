@@ -1,0 +1,26 @@
+plugin vscode:
+1. Live Preview
+2. Live Server
+3. Tailwind CSS Intellisense
+
+
+1. create dir project
+    mkdir learn_tailwind && cd learn_tailwind
+2. installation tailwind
+    npm init -y
+        to generate file package.json
+    npm install -D tailwindcss
+    npx tailwindcss init
+        this for initialization
+    open tailwind.config.js
+        set   content: [index.html],
+    add tailwind directives at src/input.css (create new dir n file)
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    run scipt compile tailwind
+        npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+        let it always running when we code / develop.
+        or running script above when not running
+    set css on website
+    
